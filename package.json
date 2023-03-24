@@ -1,0 +1,23 @@
+{
+  "name": "dlaw6799-tracker",
+  "version": "1.0.0",
+  "description": "My first nodeJS server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlaw6799/dlaw6799-tracker.git"
+  },
+  "keywords": [
+    "server",
+    "node.js"
+  ],
+  "author": "daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlaw6799/dlaw6799-tracker/issues"
+  },
+  "homepage": "https://github.com/dlaw6799/dlaw6799-tracker#readme"
+}

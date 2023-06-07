@@ -1,0 +1,122 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  form input, form button {
+    margin-bottom: 10px;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* [] selector used to select all items that contain that attribute. Selects all with data-tab-content and defaults them to not display*/
+  [data-tab-content] {
+    display: none;
+  }
+  
+  /* if they have the active class, set them to display like normal */
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  /* the tab container, uses flex to easily display in a horizontal bar */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+  }
+  
+  /* each tab will change the cursor to point like a link */
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* the active tab will be pink */
+  .tab.active {
+    background-color: pink;
+  }
+  
+  /* when hovering over a tab they will change colour */
+  .tab:hover {
+    background-color: bisque;
+  }
+  
+  .tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .movie-item {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .movie-item img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  
+  canvas {
+    display: block;
+  
+  }
+  
+  .checkbox-container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  #overview div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  
+  

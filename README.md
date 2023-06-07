@@ -481,8 +481,6 @@ Although this didnt work, it would have served as the basis for the overal ratin
      ```
 
 
-
-
 ## Deployment
 
 This project was initially created on replit as i was unable to get my server to run with node server.js, but after some trial and error i was able to get it to work with the below code.
@@ -494,5 +492,23 @@ This project was initially created on replit as i was unable to get my server to
 
 The user should be able to get the website up and running with this code
 
+
+## References
+Form Functionality:
+
+JavaScript Form Validation: https://www.w3schools.com/js/js_validation.asp
+Form Data Handling with JavaScript: https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+
+Tabs Functionality: Implemented from the teaching team's example
+
+HTML File Upload Control Styling: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/
+Displaying Uploaded Images with JavaScript: https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+
+JavaScript Element: https://www.javascripttutorial.net/javascript-dom/javascript-createelement/
+Styling HTML Elements with CSS Classes: https://www.w3schools.com/jsref/prop_element_classlist.asp
+
+Tracking in Overview:
+JavaScript Array : https://www.w3schools.com/js/js_array_methods.asp
+Manipulating DOM Elements with JavaScript: https://www.w3schools.com/jsref/dom_obj_all.asp
 
 

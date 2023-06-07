@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Movie Tracker</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Movie Tracker</title> <!-- Title of the web page -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Include external CSS file -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include external Chart.js library -->
 </head>
 <body>
   <header>
-    <h1>Movie Tracker</h1>
+    <h1>Movie Tracker</h1> <!-- Heading for the page -->
   </header>
 
   <nav>
     <ul class="tabs">
-      <li data-tab-target="#home" class="active tab">Home</li>
-      <li data-tab-target="#track" class="tab">Track</li>
-      <li data-tab-target="#overview" class="tab">Overview</li>
+      <li data-tab-target="#home" class="active tab">Home</li> <!-- Home tab (active) -->
+      <li data-tab-target="#track" class="tab">Tracked Films</li> <!-- Track tab -->
+      <li data-tab-target="#overview" class="tab">Overview</li> <!-- Overview tab -->
     </ul>
   </nav>
 
@@ -24,11 +24,13 @@
       <h1>Home</h1>
       <p>This is the home</p>
       
+      <!-- Movie form -->
       <form id="movie-form">
-        <input type="text" id="movie-title" placeholder="Movie title" required>
-        <label for="genre-assigned">Genre:</label>
-        <select id="genre-assigned">
-         <option value="Action">Action</option>
+        <input type="text" id="movie-title" placeholder="Movie title" required> <!-- Input field for movie title -->
+        <label for="genre-assigned">Genre:</label> <!-- Label for genre selection -->
+        <select id="genre-assigned"> <!-- Dropdown for selecting genre -->
+          <!-- Genre options -->
+          <option value="Action">Action</option>
           <option value="Adventure">Adventure</option>
           <option value="Animation">Animation</option>
           <option value="Comedy">Comedy</option>
@@ -53,20 +55,21 @@
           <option value="Suspense">Suspense</option>
           <option value="Noir">Noir</option>
           <option value="Satire">Satire</option>
-
         </select>
-        <input type="number" id="movie-duration" placeholder="Duration (minutes)" required>
-        <label for="movie-rating">Rating:</label>
-        <select id="movie-rating">
+        <input type="number" id="movie-duration" placeholder="Duration (minutes)" required> <!-- Input field for movie duration -->
+        <label for="movie-rating">Rating:</label> <!-- Label for movie rating selection -->
+        <select id="movie-rating"> <!-- Dropdown for selecting movie rating -->
+          <!-- Rating options -->
           <option value="⭐">⭐</option>
           <option value="⭐⭐">⭐⭐</option>
           <option value="⭐⭐⭐">⭐⭐⭐</option>
           <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
           <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
         </select>
-        <label for="movie-emotion">Emotional Trigger Rating:</label>
-        <select id="movie-emotion">
-          <option value="☺️">☺️(Low)</option>
+        <label for="movie-emotion">Emotional Trigger Rating:</label> <!-- Label for emotional trigger rating selection -->
+        <select id="movie-emotion"> <!-- Dropdown for selecting emotional trigger rating -->
+          <!-- Emotional trigger rating options -->
+          <option value="☺️">☺️ (Low)</option>
           <option value="😃">😃</option>
           <option value="😐">😐</option>
           <option value="😟">😟</option>
@@ -75,9 +78,10 @@
         <p>Triggers:</p>
         <div class="checkbox-container">
           <div class="column">
+            <!-- Checkbox options for triggers -->
             <div>
               <label for="trigger-assault">
-                <input type="checkbox" id="trigger-assault" name="triggers" value="Sexual assault"> Sexual assault
+                <input type="checkbox" id="trigger-assault" name="triggers" value="Sexual assault"> Sexual Assault
               </label>
             </div>
             <div>
@@ -100,8 +104,10 @@
                 <input type="checkbox" id="trigger-self-harm-suicide" name="triggers" value="Self-harm and suicide"> Self-harm and suicide
               </label>
             </div>
+            <!-- ... other trigger options ... -->
           </div>
           <div class="column">
+            <!-- More checkbox options for triggers -->
             <div>
               <label for="trigger-eating-disorders">
                 <input type="checkbox" id="trigger-eating-disorders" name="triggers" value="Eating disorders, body hatred, and fat phobia"> Eating disorders
@@ -127,11 +133,12 @@
                 <input type="checkbox" id="trigger-homophobia" name="triggers" value="Homophobia and heterosexism"> Homophobia
               </label>
             </div>
+            <!-- ... other trigger options ... -->
           </div>
         </div>
-
-        <input type="file" id="movie-cover" accept="image/*">
-        <input type="button" value="Add Movie" onclick="addMovie()">
+       <p>  </p>  <!-- Empty paragraph line to create a space -->
+        <input type="file" id="movie-cover" accept="image/*"> <!-- Input field for uploading movie cover image -->
+        <input type="button" value="Add Movie" onclick="addMovie()"> <!-- Button to add the movie -->
       </form>
     </section>
 
@@ -146,16 +153,14 @@
     <section id="overview" data-tab-content>
       <h1>Overview</h1>
       <div>
-    <p>Most commonly inputted emotional trigger rating:</p>
-    <canvas id="chart"></canvas>
-  </div>
-          <div id="trigger-overview"></div>
-          <div id="genre-overview"></div>
-    
-      
+        <p>Most commonly inputted emotional trigger rating:</p>
+        <canvas id="chart"></canvas> <!-- Canvas element for displaying chart -->
+      </div>
+      <div id="trigger-overview"></div> <!-- Container for trigger overview -->
+      <div id="genre-overview"></div> <!-- Container for genre overview -->
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!-- Include external JavaScript file -->
 </body>
 </html>

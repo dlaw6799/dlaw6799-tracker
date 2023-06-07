@@ -1,122 +1,115 @@
+body {
+  font-family: Arial, sans-serif; /* Set font family for the entire body */
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #333; /* Set background color for the header */
+  color: #fff; /* Set text color for the header */
+  padding: 20px; /* Add padding around the header content */
+  text-align: center; /* Center align the text within the header */
+}
+
+h1 {
+  margin: 0; /* Remove any margin around the h1 element */
+}
+
+main {
+  padding: 20px; /* Add padding around the main content */
+}
+
+form input,
+form button {
+  margin-bottom: 10px; /* Add margin at the bottom of input and button elements in a form */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  form input, form button {
-    margin-bottom: 10px;
-  }
-  
-  html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* [] selector used to select all items that contain that attribute. Selects all with data-tab-content and defaults them to not display*/
-  [data-tab-content] {
-    display: none;
-  }
-  
-  /* if they have the active class, set them to display like normal */
-  .active[data-tab-content] {
-    display: block;
-  }
-  
-  /* the tab container, uses flex to easily display in a horizontal bar */
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
-  }
-  
-  /* each tab will change the cursor to point like a link */
-  .tab {
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  /* the active tab will be pink */
-  .tab.active {
-    background-color: pink;
-  }
-  
-  /* when hovering over a tab they will change colour */
-  .tab:hover {
-    background-color: bisque;
-  }
-  
-  .tab-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  
-  .movie-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  
-  .movie-item {
-    width: calc(50% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .movie-item img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  
-  
-  canvas {
-    display: block;
-  
-  }
-  
-  .checkbox-container {
-    display: flex;
-  }
-  
-  .column {
-    flex: 1;
-  }
-  
-  #overview div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0;
-  }
-  
-  
-  
+  padding: 0;
+  margin: 0;
+}
+
+/* [] selector used to select all items that contain that attribute. Selects all with data-tab-content and defaults them to not display*/
+[data-tab-content] {
+  display: none; /* Hide elements with data-tab-content attribute by default */
+}
+
+/* if they have the active class, set them to display like normal */
+.active[data-tab-content] {
+  display: block; /* Display elements with active class and data-tab-content attribute */
+}
+
+/* the tab container, uses flex to easily display in a horizontal bar */
+.tabs {
+  display: flex; /* Display the tabs container as a flex container */
+  justify-content: space-around; /* Distribute the tabs evenly within the container */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black; /* Add a bottom border to the tabs container */
+}
+
+/* each tab will change the cursor to point like a link */
+.tab {
+  cursor: pointer; /* Set the cursor to a pointer when hovering over tabs */
+  padding: 10px; /* Add padding around the tab content */
+}
+
+/* the active tab will be pink */
+.tab.active {
+  background-color: #24c226; /* Set the background color of active tabs */
+}
+
+/* when hovering over a tab they will change colour */
+.tab:hover {
+  background-color: #1c821d; /* Set the background color of tabs on hover */
+}
+
+.tab-content {
+  margin-left: 20px; /* Add margin on the left side of tab content */
+  margin-right: 20px; /* Add margin on the right side of tab content */
+}
+
+.movie-list {
+  display: flex; /* Display the movie list as a flex container */
+  flex-wrap: wrap; /* Wrap movie items within the container if there's not enough space */
+  justify-content: flex-start; /* Align movie items to the left within the container */
+}
+
+.movie-item {
+  width: calc(50% - 20px); /* Set the width of movie items to occupy half the container width minus margin */
+  margin-right: 20px; /* Add margin on the right side of movie items */
+  margin-bottom: 20px; /* Add margin at the bottom of movie items */
+  text-align: center; /* Center align the content within movie items */
+}
+
+.movie-item img {
+  display: block; /* Display movie item images as block elements */
+  margin: 0 auto; /* Center align movie item images horizontally within their container */
+  margin-bottom: 10px; /* Add margin at the bottom of movie item images */
+}
+
+canvas {
+  display: block; /* Display canvas elements as block elements */
+}
+
+.checkbox-container {
+  display: flex; /* Display the checkbox container as a flex container */
+}
+
+.column {
+  flex: 1; /* Make each column within the checkbox container flexible to distribute space evenly */
+}
+
+#overview div {
+  display: flex; /* Display the div elements within the overview section as flex containers */
+  justify-content: center; /* Center align content horizontally within the div */
+  align-items: center; /* Center align content vertically within the div */
+  flex-direction: column; /* Arrange content in a column within the div */
+  margin-top: 0; /* Remove margin at the top of the div elements */
+}

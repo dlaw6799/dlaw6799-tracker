@@ -2,16 +2,22 @@
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
+// Adding click event listeners to the tabs
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget);
 
+    // Removing 'active' class from all tab content elements
     tabContents.forEach(tabContent => {
       tabContent.classList.remove('active');
     });
+
+    // Removing 'active' class from all tabs
     tabs.forEach(tab => {
       tab.classList.remove('active');
     });
+
+    // Adding 'active' class to the clicked tab and target tab content
     tab.classList.add('active');
     target.classList.add('active');
   });
@@ -45,6 +51,7 @@ function createMovieItem(movie) {
 
 // Function to add a new movie
 function addMovie() {
+  // Retrieving values from input fields
   var title = document.getElementById("movie-title").value;
   var genreSelect = document.getElementById("genre-assigned");
   var genre = genreSelect.options[genreSelect.selectedIndex].value;
@@ -57,6 +64,7 @@ function addMovie() {
   });
   var cover = document.getElementById("movie-cover").files[0];
 
+  // Creating a movie object with the input values
   var movie = {
     title: title,
     genre: genre,
@@ -67,9 +75,11 @@ function addMovie() {
     cover: cover
   };
 
+  // Creating a movie item and appending it to the movie list
   var movieItem = createMovieItem(movie);
   document.getElementById("movie-list").appendChild(movieItem);
 
+  // Clearing the input fields
   document.getElementById("movie-title").value = "";
   document.getElementById("genre-assigned").value = "";
   document.getElementById("movie-duration").value = "";
@@ -81,14 +91,15 @@ function addMovie() {
   });
   document.getElementById("movie-cover").value = "";
 
-  // Update genre count and genre list in overview tab
+  // Updating genre count and genre list in the overview tab
   genres[genre]++;
   updateGenreList();
 
-  // Update trigger list in overview tab
+  // Updating trigger list in the overview tab
   displayTriggerList();
 }
 
+// Adding event listener to the movie form submission
 document.getElementById("movie-form").addEventListener("submit", function(event) {
   event.preventDefault();
   addMovie();
@@ -124,6 +135,7 @@ function updateGenreList() {
   var genreListContainer = document.getElementById("genre-overview");
   var genreListHTML = "<h3>List of Genres:</h3>";
 
+  // Looping through the genres object to generate the genre list
   for (const genre in genres) {
     if (genres.hasOwnProperty(genre)) {
       genreListHTML += "<p>" + genre + ": " + genres[genre] + " times</p>";
@@ -142,7 +154,6 @@ for (var i=0; i < genreOptions.length; i++) {
   var genreName = genreOptions[i].value;
   genres[genreName] = 0;
 }
-
 
 // Call the function initially to display the trigger and genre lists
 displayTriggerList();
@@ -180,7 +191,7 @@ var chart = new Chart(ctx, {
   options: {}
 });
 
-// Count the number of occurrence of each emotion
+// Count the number of occurrences of each emotion
 function countEmotion(emotion) {
   var count = 0;
   var emotionalTriggers = document.querySelectorAll('#movie-emotion option');

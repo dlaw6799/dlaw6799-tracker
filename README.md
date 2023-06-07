@@ -11,6 +11,8 @@ Throughout the development of the Movie Tracking website, I followed a process t
 **Setting up Form Functionality**:
    When starting the development process, I knew the importance of creating working form to collect movie details, as this served as the foundation for the whole website. By using HTML, CSS, and JavaScript, I created a form that allows users to input information about a movie such as the movie title, genre, duration, rating, emotional triggers, and even upload a cover photo. To handle the form submission and process the entered data, I incorporated the following code snippets:
 
+   Originally i had text input for a few fields including genres and duration. The stars functionality was originally a radio button scale from 1-5 before it was modified to reflect a better data input model.
+
    HTML Form: A wide arrange of different methods were used to create this form, such as text input, selection options, radio buttons, lists etc.
    ```html
     <form id="movie-form">

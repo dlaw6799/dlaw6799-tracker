@@ -12,6 +12,26 @@ Throughout the development of the Movie Tracking website, I followed a process t
    When starting the development process, I knew the importance of creating working form to collect movie details, as this served as the foundation for the whole website. By using HTML, CSS, and JavaScript, I created a form that allows users to input information about a movie such as the movie title, genre, duration, rating, emotional triggers, and even upload a cover photo. To handle the form submission and process the entered data, I incorporated the following code snippets:
 
    Originally i had text input for a few fields including genres and duration. The stars functionality was originally a radio button scale from 1-5 before it was modified to reflect a better data input model.
+ 
+ Various iterations displayed below were explored, before finally developing the below code.
+ 
+ <img width="585" alt="Screenshot 2023-06-07 at 9 56 53 pm" src="https://github.com/dlaw6799/dlaw6799-tracker/assets/128760021/a8ae2143-879b-4ba9-bbb4-c585b64677b2">
+ 
+ -------------
+<img width="263" alt="Screenshot 2023-06-07 at 9 55 20 pm" src="https://github.com/dlaw6799/dlaw6799-tracker/assets/128760021/eb0f1ee0-3c91-4d4a-954d-c2cd945ca222">
+
+-------------
+<img width="712" alt="Screenshot 2023-06-07 at 9 54 55 pm" src="https://github.com/dlaw6799/dlaw6799-tracker/assets/128760021/e6f4b173-2c52-478b-a246-f41345946114">
+
+-------------
+<img width="679" alt="Screenshot 2023-06-07 at 9 54 49 pm" src="https://github.com/dlaw6799/dlaw6799-tracker/assets/128760021/3b21d958-6feb-4a29-b65d-fc4f4afc4bb6">
+
+-----------------
+
+Final Design
+
+<img width="681" alt="Screenshot 2023-06-07 at 9 58 53 pm" src="https://github.com/dlaw6799/dlaw6799-tracker/assets/128760021/b9ca1552-17f4-4fcc-8ff4-22d26ff3796b">
+
 
    HTML Form: A wide arrange of different methods were used to create this form, such as text input, selection options, radio buttons, lists etc.
    ```html
@@ -473,3 +493,6 @@ This project was initially created on replit as i was unable to get my server to
 ```
 
 The user should be able to get the website up and running with this code
+
+
+
